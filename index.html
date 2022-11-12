@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lojas Manetto</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+  <body>
+   <div class="page">
+      <header>
+       
+        <h1>Sorteio lojas <span>Manetto</span></h1>
+        <p>Cadastre-se e concorra a prêmios incríveis!</p>
+   
+      </header>
+      <form id="my-form">
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Dados para contato</legend>
+        
+          <div class="col-2">   
+          <div class="input-wrapper">
+              <label for="name">Nome</label>
+              <input type="text" id="name" required/>
+          </div>
+  
+          <div class="input-wrapper">
+              <label for="surname">Sobrenome</label>
+              <input type="text" id="surname" required/>
+          </div>
+        </div>   
+
+          <div class="input-wrapper">
+            <label for="email">E-mail<span>(insira um email válido)</span></label>
+            <input type="email" id="email" required/>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="whatsapp">Número ou Whatsapp para contato</label>
+            <input type="number" id="whatsapp" required/>
+          </div>
+        </div>
+
+      </fieldset> 
+
+       <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações para o sorteio</legend>
+
+          <div class="col-2">
+            <div class="input-wrapper">
+              <label for="birth">Data de nascimento</label>
+              <input type="date" id="birth" required/>
+            </div> 
+
+            <div class="input-wrapper">
+                <label for="sex">Sexo</label>
+                <select id="sex">
+                  <option value="Male">Masculino</option>
+                  <option value="Female">feminino</option>
+                </select>
+            </div>
+          </div>   
+
+          <div class="input-wrapper">
+            <label for="cupom">Número do cupom<span>(O cupom é enviado apenas para clientes frequentes)</span></label>
+            <input type="number" id="cupom" required/>
+          </div>
+          
+          <div class="input-wrapper">
+            <label for="info">Críticas e sugestões para melhorarmos nossos serviços</label>
+            <textarea id="info"></textarea>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="notificatios"/>
+            <label for="notifications">Receber promoções por e-mail</label>
+          </div> 
+        </div>
+            
+      </fieldset>
+
+    </form>
+
+      <footer>
+      <input class="button" 
+             type="submit" 
+             form="my-form"
+             value="Enviar">
+      </footer>
+      
+    </div>
+  </body>
+</html>
